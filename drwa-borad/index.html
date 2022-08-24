@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas画板</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canvas画板</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <div align="center" style="margin-top:2.5rem;">
-    <canvas id="MyCanvas" width="1500" height="500" style="border: 2px solid red"></canvas>
-    <div class="control-ops control">
-      <button id="clear_draw">清空画板</button>
-      <lebel>线条粗细: </lebel>
-      <select id="sltWidth">
-        <option value="1">1</option>
-        <option value="3" selected>3</option>
-        <option value="5">5</option>
-        <option value="7">7</option>
-        <option value="9">9</option>
-        <option value="15">15</option>
-      </select>
-      <label>线条颜色: </label>
-      <select id="sltColor">
-        <option value="black" selected>black</option>
-        <option value="blue">blue</option>
-        <option value="red">red</option>
-        <option value="green">green</option>
-        <option value="yellow">yellow</option>
-        <option value="gray">gray</option>
-      </select>
+  <body>
+    <div align="center" style="margin-top: 2.5rem">
+      <canvas
+        id="MyCanvas"
+        width="1500"
+        height="500"
+        style="border: 2px solid red"
+      ></canvas>
+      <div class="control-ops control">
+        <button id="clear_draw">清空画板</button>
+        <lebel>线条粗细: </lebel>
+        <select id="sltWidth">
+          <option value="1">1</option>
+          <option value="3" selected>3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="15">15</option>
+        </select>
+        <label>线条颜色: </label>
+        <select id="sltColor">
+          <option value="black" selected>black</option>
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="yellow">yellow</option>
+          <option value="gray">gray</option>
+        </select>
+        <button id="save_image" onclick="saveImage()">保存</button>
+      </div>
     </div>
-    <button class="saving"></button>
-  </div>
-  <script src="./main.js"></script>
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>

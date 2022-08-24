@@ -1,7 +1,10 @@
-let bgMusic = document.getElementById("bgMusic");
+const bgMusic = document.getElementById('bgMusic')
 
 // 冒泡? 捕获?
-document.body.addEventListener('mousedown', function () {
-  bgMusic.play();
-}, false)
-
+document.body.addEventListener(
+  'mousedown',
+  () => {
+    bgMusic.play()
+  },
+  false,
+)

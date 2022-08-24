@@ -1,0 +1,24 @@
+{
+  "name": "anime-demo",
+  "version": "1.0.0",
+  "description": "this is opensource anime javascript demo",
+  "author": "dushenyan",
+  "license": "ISC",
+  "homepage": "https://github.com/dbudaiya/anime-demo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbudaiya/anime-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbudaiya/anime-demo/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint  . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.26.1",
+    "eslint": "^8.22.0"
+  }
+}
